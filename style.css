@@ -1,0 +1,1054 @@
+@charset "UTF-8";
+@keyframes myAnim3 {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+.top_basket {
+  height: 400px;
+  background-image: url(img/basket_top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.basket_item {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+
+.basket_text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 27px;
+}
+
+.basket_top {
+  grid-column: span 8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket_left {
+  padding-top: 32px;
+  border-top: 0.5px solid #CACDD8;
+  grid-column: span 8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.basket_product_img {
+  width: 173px;
+  height: 173px;
+}
+
+.basket_input {
+  width: 71px;
+  height: 51px;
+  border: 1px solid #F7F6F6;
+  border-radius: 6px;
+  background: #F7F6F6;
+  display: flex;
+  align-items: center;
+}
+
+.cursor {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  margin-right: 5px;
+}
+
+.basket_input_input {
+  border: none;
+  background: #F7F6F6;
+  width: 27px;
+  height: 100%;
+  padding-left: 20px;
+  outline: none;
+}
+
+.basket_input_input:hover {
+  border: none;
+}
+
+/*Сделала серую рамку при выборе*/
+.basket_input_input:focus-visible {
+  border: 2px solid #CACDD8;
+  border-radius: 6px;
+}
+
+/*Убрала стрелочки*/
+input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.basket_info {
+  width: 276px;
+}
+
+.basket_zagol3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+  padding-bottom: 14px;
+}
+
+.basket_paragraf2 {
+  color: #050505;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.basket_pack {
+  display: flex;
+  justify-content: start;
+  gap: 32px;
+}
+
+.basket_box_link {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.basket_link {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.basket_but_left {
+  grid-column: span 8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.batton_box_basket {
+  border-radius: 50px;
+  border: 1px solid #000;
+  width: 200px;
+  height: 37px;
+  background: none;
+  color: #020202;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: background 0.7s;
+  transition: color 0.7s;
+}
+.batton_box_basket:hover {
+  background: #000;
+  color: white;
+}
+
+.basket_form {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 9;
+  grid-column-end: 13;
+  border-radius: 20px;
+  background: #F7F6F6;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+  padding-top: 42px;
+  padding-bottom: 148px;
+}
+
+/* Стиль текста Montserrat, пока оставила как во всем проекте*/
+.basket_h2 {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 34px;
+}
+
+.link_vvod {
+  width: 288px;
+  border: none;
+  border-bottom: 1px solid #CACDD8;
+  background: none;
+  outline: none;
+}
+
+.link_vvod::-moz-placeholder {
+  color: #000;
+  text-align: start;
+  font-size: 14px;
+  height: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.link_vvod::placeholder {
+  color: #000;
+  text-align: start;
+  font-size: 14px;
+  height: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*Сделала утолщение линий*/
+.link_vvod:hover {
+  border: none;
+  border-bottom: 3px solid #CACDD8;
+}
+
+.link_vvod:focus-visible {
+  border: none;
+  border-bottom: 3px solid #CACDD8;
+}
+
+.summa_basket {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 64px;
+  margin-bottom: 18px;
+}
+
+.basket_box_but {
+  width: 290px;
+  height: 41px;
+  border-radius: 20px;
+  border: 1px solid #040404;
+  background: none;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: background 0.7s;
+  transition: color 0.7s;
+}
+.basket_box_but:hover {
+  background: #000;
+  color: white;
+  animation: myAnim3 1.5s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 150%;
+  }
+}
+@keyframes myAnim2 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Подчеркивание добавила не по заданию, а по макету */
+body,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ГОЛОВА САЙТА */
+.top {
+  height: 735px;
+  background-image: url(img/topback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  /* отступы по бокам, не по заданию 
+  padding-left: 103px;
+  padding-right: 101px;*/
+}
+.top_catalog {
+  height: 400px;
+  background-image: url(img/catalog_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.menu_mobile {
+  display: none;
+}
+
+.header {
+  height: 76px;
+  /* Подчеркивание добавила не по заданию, а по макету */
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+  padding-left: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Добавила стили по макету для поля ввода */
+.vvod1 {
+  width: 288px;
+  height: 41px;
+  background-color: transparent;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Надпись внутри поля ввода */
+.vvod1::-moz-placeholder {
+  color: white;
+}
+.vvod1::placeholder {
+  color: white;
+}
+
+/* ГЛАВНАЯ НАДПИСЬ */
+.navig {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.menu {
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+
+.menu:hover {
+  text-decoration: underline;
+}
+
+.glavZag {
+  color: white;
+  /* Задала ширину, возможно нужно убрать */
+  max-width: 792px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  margin-top: 64px;
+}
+
+.glavZag_catalog {
+  margin-top: 128px;
+  margin-bottom: 126px;
+}
+
+.paragrf1 {
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.paragrf1_catalog {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.ssilka1 {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+/* ? У этой ссылки наведение должно быть такое же  как у нижней ?*/
+.ssilka1:hover {
+  color: #888;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration-line: none;
+}
+
+.ssilka1_catalog {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.ssilka1_catalog:hover {
+  text-decoration: underline;
+  color: #888;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  grid-area: select;
+  z-index: 1;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select_catalog {
+  width: 288px;
+  height: 41px;
+  border-radius: 20px;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+}
+
+.select_catalog::before {
+  content: "";
+  width: 20px;
+  height: 11px;
+  background-color: black;
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  display: block;
+  grid-area: select;
+  justify-self: end;
+}
+
+.menu_catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+
+.menu_catalog_zag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* МЕБЕЛЬ ДЛЯ */
+.for_item {
+  height: 415px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  grid-column: span 4;
+}
+
+.for_item_big {
+  grid-column: span 6;
+}
+
+.for_item_1 {
+  background-image: url(img/for_1.jpg);
+  /* ? нужно ли в этих блоках задавать данные функции, ведь картинка и так стоит по центру? */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.for_item_2 {
+  background-image: url(img/for_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.for_item_3 {
+  background-image: url(img/for_3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.for_item_4 {
+  background-image: url(img/for_4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.for_item_5 {
+  background-image: url(img/for_5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.for_content {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ */
+.product {
+  width: 378px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
+}
+
+.product:active {
+  animation: myAnim2 0.3s ease 0s 1 normal forwards;
+}
+
+.product_img {
+  width: 100%;
+}
+
+.product_box {
+  padding-top: 64px;
+}
+
+.produkt_box_price {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.product_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.zagol2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #000000;
+}
+
+.zagol3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.paragraf2 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+}
+
+.paragraf3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #050505;
+}
+
+.paragraf4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: line-through;
+  color: #888888;
+}
+
+.link_podval {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  text-decoration-line: underline;
+}
+
+.link_podval:hover {
+  color: #888;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration-line: none;
+}
+
+/* ОТСТУПЫ НИЖНИЕ*/
+.otst16 {
+  margin-bottom: 16px;
+}
+
+.otst32 {
+  margin-bottom: 32px;
+}
+
+.otst12 {
+  margin-bottom: 12px;
+}
+
+.otst64 {
+  margin-bottom: 64px;
+}
+
+.otst64_top {
+  margin-top: 64px;
+}
+
+.otst32_top {
+  margin-top: 32px;
+}
+
+/* НИЗ САЙТА*/
+.zagol4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.ssilka2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+}
+
+.paragraf5 {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.vvod2 {
+  width: 275px;
+  height: 46px;
+  background-color: white;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C4C4C4;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Надпись внутри поля ввода */
+.vvod2::-moz-placeholder {
+  color: #C4C4C4;
+}
+.vvod2::placeholder {
+  color: #C4C4C4;
+}
+
+.but1 {
+  background: rgba(222, 215, 215, 0.41);
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 275px;
+  height: 46px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  margin-top: 12px;
+  transition: background 0.7s;
+  transition: color 0.7s;
+}
+
+.but1:hover {
+  background: #000;
+  color: white;
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer_mail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer_mail_img {
+  width: 122px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer_pole {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_box_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 129px;
+}
+
+.footer_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #F7F6F6;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.icon:hover path {
+  fill: black;
+}
+
+@media (max-width: 1024px) {
+  @keyframes myAnim_tab {
+    0% {
+      background-size: 170%;
+    }
+    100% {
+      background-size: 350%;
+    }
+  }
+  .top {
+    animation: myAnim_tab 2s ease 0s 1 normal forwards;
+  }
+  .top_catalog {
+    animation: myAnim_tab 2s ease 0s 1 normal forwards;
+  }
+  .top_basket {
+    animation: myAnim_tab 2s ease 0s 1 normal forwards;
+  }
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for_item {
+    height: 268px;
+  }
+  .product_content {
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 39px;
+  }
+  .footer_img {
+    display: none;
+  }
+  .basket_form {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .basket_left {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .basket_top {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .top {
+    animation: myAnim_tab 2s ease 0s 1 normal forwards;
+  }
+  .top_catalog {
+    animation: myAnim_tab 2s ease 0s 1 normal forwards;
+  }
+  .top_basket {
+    animation: myAnim_tab 2s ease 0s 1 normal forwards;
+  }
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .product {
+    width: 345px;
+  }
+}
+@media (max-width: 767px) {
+  @keyframes myAnim_mob {
+    0% {
+      background-size: 400%;
+    }
+    100% {
+      background-size: 500%;
+    }
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    animation: myAnim_mob 2s ease 0s 1 normal forwards;
+  }
+  .top_catalog {
+    animation: myAnim_mob 2s ease 0s 1 normal forwards;
+  }
+  .top_basket {
+    animation: myAnim_mob 2s ease 0s 1 normal forwards;
+  }
+  .header {
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    border-bottom: none;
+  }
+  .vvod1 {
+    display: none;
+  }
+  .navig {
+    display: none;
+  }
+  .header_img {
+    width: 99px;
+  }
+  .menu_mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+  }
+  .glavZag {
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+  }
+  .glavZag_catalog {
+    margin-top: 82px;
+  }
+  .paragrf1 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .ssilka1 {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .top_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .zagol2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .for {
+    grid-template-columns: repeat 4, 1fr;
+    gap: 16px;
+  }
+  .for_item {
+    grid-column: 1/-1;
+    height: 375px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .for_item_big {
+    height: 244px;
+  }
+  .product_box {
+    padding-top: 32px;
+  }
+  .zagol2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .paragraf3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .paragraf4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .zagol3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .footer {
+    padding-bottom: 32px;
+  }
+  .footer_box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 34px;
+    padding-bottom: 32px;
+  }
+  .footer_box_menu {
+    gap: 100px;
+  }
+  .menu_catalog {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-top: 32px;
+  }
+  .otst64 {
+    margin-bottom: 32px;
+  }
+  .otst64_top {
+    margin-top: 32px;
+  }
+  .top_basket {
+    background-position: 70%;
+  }
+  .basket_top {
+    display: none;
+  }
+  .basket_item {
+    margin-top: 92px;
+  }
+  .basket_left {
+    padding-top: 18px;
+  }
+  .basket_product_img {
+    display: none;
+  }
+  .basket_zagol3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .paragraf2 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .basket_paragraf2 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .link_podval {
+    font-size: 14px;
+    line-height: 29px;
+  }
+  .batton_box_basket {
+    width: 100%;
+    height: 37px;
+  }
+  .basket_but_left {
+    grid-column: 1/-1;
+    flex-wrap: nowrap;
+    gap: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .basket_form {
+    grid-column: 1/-1;
+    grid-row-end: 4;
+    margin-top: 16px;
+  }
+  .basket_h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .link_vvod {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .product_box {
+    padding-top: 48px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,287 @@
+@import 'vars';
+
+@keyframes myAnim3 {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.top_basket {
+    height: 400px;
+    background-image: url(img/basket_top.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.basket_item {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+}
+
+.basket_text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 27px;
+}
+
+.basket_top {
+    grid-column: span 8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket_left {
+    padding-top: 32px;
+    border-top: 0.5px solid #CACDD8;
+    grid-column: span 8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+
+}
+
+
+
+.basket_product_img {
+    width: 173px;
+    height: 173px;
+}
+
+.basket_input {
+    width: 71px;
+    height: 51px;
+    border: 1px solid #F7F6F6;
+    border-radius: 6px;
+    background: #F7F6F6;
+    display: flex;
+    align-items: center;
+}
+
+.cursor {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-right: 5px;
+}
+
+
+.basket_input_input {
+    border: none;
+    background: #F7F6F6;
+    width: 27px;
+    height: 100%;
+    padding-left: 20px;
+    outline: none;
+}
+
+.basket_input_input:hover {
+    border: none;
+}
+
+/*Сделала серую рамку при выборе*/
+
+.basket_input_input:focus-visible {
+    border: 2px solid #CACDD8;
+    border-radius: 6px;
+
+}
+
+/*Убрала стрелочки*/
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.basket_info {
+    width: 276px;
+}
+
+.basket_zagol3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    padding-bottom: 14px;
+}
+
+.basket_paragraf2 {
+    color: #050505;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.basket_pack {
+    display: flex;
+    justify-content: start;
+    gap: 32px;
+}
+
+.basket_box_link {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.basket_link {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.basket_but_left {
+    grid-column: span 8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+}
+
+.batton_box_basket {
+    border-radius: 50px;
+    border: 1px solid #000;
+    width: 200px;
+    height: 37px;
+    background: none;
+    color: #020202;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: background 0.7s;
+    transition: color 0.7s;
+    &:hover {
+        background: #000;
+        color: white;
+      }
+}
+
+
+.basket_form {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    border-radius: 20px;
+    background: #F7F6F6;
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+    padding-top: 42px;
+    padding-bottom: 148px;
+
+}
+
+/* Стиль текста Montserrat, пока оставила как во всем проекте*/
+.basket_h2 {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 34px;
+}
+
+.link_vvod {
+    width: 288px;
+    border: none;
+    border-bottom: 1px solid #CACDD8;
+    background: none;
+    outline: none;
+
+}
+
+.link_vvod::placeholder {
+    color: #000;
+    text-align: start;
+    font-size: 14px;
+    height: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+/*Сделала утолщение линий*/
+
+.link_vvod:hover {
+    border: none;
+    border-bottom: 3px solid #CACDD8;
+}
+
+.link_vvod:focus-visible {
+    border: none;
+    border-bottom: 3px solid #CACDD8;
+}
+
+.summa_basket {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 64px;
+    margin-bottom: 18px;
+}
+
+.basket_box_but {
+    width: 290px;
+    height: 41px;
+    border-radius: 20px;
+    border: 1px solid #040404;
+    background: none;
+    color: #000;
+    text-align: center;
+     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: background 0.7s;
+    transition: color 0.7s;
+
+    &:hover {
+        background: #000;
+        color: white;
+        animation: myAnim3 1.5s ease 0s 1 normal forwards;
+      }
+}
+
